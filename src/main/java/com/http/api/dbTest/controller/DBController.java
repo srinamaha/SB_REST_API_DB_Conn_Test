@@ -17,7 +17,7 @@ public class DBController {
     @Autowired
     DataSource dataSource;
 
-    private static final Logger LOGGER = LogManager.getLogger(Application.class);
+    private final Logger LOGGER = LogManager.getLogger(this.getClass());
 
     @RequestMapping("/live")
     public String checkDBStatus (){
